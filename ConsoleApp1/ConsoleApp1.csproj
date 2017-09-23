@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCCBBD2C-50B4-40C0-B0A9-BA760FA997AA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.7.3\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Lame, Version=1.0.3.3048, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Lame.1.0.4\lib\net20\NAudio.Lame.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.3.0.2\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.D3DCompiler.3.0.2\lib\net45\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Desktop, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Desktop.3.0.2\lib\net45\SharpDX.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Diagnostics, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Diagnostics.2.0.4\lib\net20\SharpDX.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.3.0.2\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.3.0.2\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.3.0.2\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.3.0.2\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\AbstractGame.cs" />
+    <Compile Include="Engine\GameEngine.cs" />
+    <Compile Include="Engine\Main.cs" />
+    <Compile Include="Game\Les3.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\ConsoleApp1.exe.config" />
+    <None Include="packages.config" />
+    <None Include="packages\NAudio.1.7.3\NAudio.1.7.3.nupkg" />
+    <None Include="packages\NAudio.Lame.1.0.4\NAudio.Lame.1.0.4.nupkg" />
+    <None Include="packages\NAudio.Lame.1.0.4\tools\install.ps1" />
+    <None Include="packages\SharpDX.3.0.2\SharpDX.3.0.2.nupkg" />
+    <None Include="packages\SharpDX.D3DCompiler.3.0.2\SharpDX.D3DCompiler.3.0.2.nupkg" />
+    <None Include="packages\SharpDX.Desktop.3.0.2\SharpDX.Desktop.3.0.2.nupkg" />
+    <None Include="packages\SharpDX.Diagnostics.2.0.4\SharpDX.Diagnostics.2.0.4.nupkg" />
+    <None Include="packages\SharpDX.Direct2D1.3.0.2\SharpDX.Direct2D1.3.0.2.nupkg" />
+    <None Include="packages\SharpDX.Direct3D11.3.0.2\SharpDX.Direct3D11.3.0.2.nupkg" />
+    <None Include="packages\SharpDX.DXGI.3.0.2\SharpDX.DXGI.3.0.2.nupkg" />
+    <None Include="packages\SharpDX.Mathematics.3.0.2\SharpDX.Mathematics.3.0.2.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\icon.ico" />
+    <Content Include="bin\Debug\ConsoleApp1.exe" />
+    <Content Include="bin\Debug\ConsoleApp1.pdb" />
+    <Content Include="bin\Debug\libmp3lame.32.dll" />
+    <Content Include="bin\Debug\libmp3lame.64.dll" />
+    <Content Include="bin\Debug\NAudio.dll" />
+    <Content Include="bin\Debug\NAudio.Lame.dll" />
+    <Content Include="bin\Debug\NAudio.xml" />
+    <Content Include="bin\Debug\SharpDX.D3DCompiler.dll" />
+    <Content Include="bin\Debug\SharpDX.D3DCompiler.xml" />
+    <Content Include="bin\Debug\SharpDX.Desktop.dll" />
+    <Content Include="bin\Debug\SharpDX.Desktop.xml" />
+    <Content Include="bin\Debug\SharpDX.Diagnostics.dll" />
+    <Content Include="bin\Debug\SharpDX.Diagnostics.xml" />
+    <Content Include="bin\Debug\SharpDX.Direct2D1.dll" />
+    <Content Include="bin\Debug\SharpDX.Direct2D1.xml" />
+    <Content Include="bin\Debug\SharpDX.Direct3D11.dll" />
+    <Content Include="bin\Debug\SharpDX.Direct3D11.xml" />
+    <Content Include="bin\Debug\SharpDX.dll" />
+    <Content Include="bin\Debug\SharpDX.DXGI.dll" />
+    <Content Include="bin\Debug\SharpDX.DXGI.xml" />
+    <Content Include="bin\Debug\SharpDX.Mathematics.dll" />
+    <Content Include="bin\Debug\SharpDX.Mathematics.xml" />
+    <Content Include="bin\Debug\SharpDX.xml" />
+    <Content Include="libmp3lame.32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libmp3lame.64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\NAudio.1.7.3\lib\net35\NAudio.dll" />
+    <Content Include="packages\NAudio.1.7.3\lib\net35\NAudio.XML" />
+    <Content Include="packages\NAudio.1.7.3\lib\windows8\NAudio.Win8.dll" />
+    <Content Include="packages\NAudio.1.7.3\lib\windows8\NAudio.Win8.XML" />
+    <Content Include="packages\NAudio.1.7.3\license.txt" />
+    <Content Include="packages\NAudio.1.7.3\readme.txt" />
+    <Content Include="packages\NAudio.Lame.1.0.4\content\libmp3lame.32.dll" />
+    <Content Include="packages\NAudio.Lame.1.0.4\content\libmp3lame.64.dll" />
+    <Content Include="packages\NAudio.Lame.1.0.4\lib\net20\NAudio.Lame.dll" />
+    <Content Include="packages\SharpDX.3.0.2\lib\net45\SharpDX.dll" />
+    <Content Include="packages\SharpDX.3.0.2\lib\net45\SharpDX.xml" />
+    <Content Include="packages\SharpDX.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.dll" />
+    <Content Include="packages\SharpDX.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.xml" />
+    <Content Include="packages\SharpDX.D3DCompiler.3.0.2\lib\net45\SharpDX.D3DCompiler.dll" />
+    <Content Include="packages\SharpDX.D3DCompiler.3.0.2\lib\net45\SharpDX.D3DCompiler.xml" />
+    <Content Include="packages\SharpDX.D3DCompiler.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.D3DCompiler.dll" />
+    <Content Include="packages\SharpDX.D3DCompiler.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.D3DCompiler.xml" />
+    <Content Include="packages\SharpDX.Desktop.3.0.2\lib\net45\SharpDX.Desktop.dll" />
+    <Content Include="packages\SharpDX.Desktop.3.0.2\lib\net45\SharpDX.Desktop.xml" />
+    <Content Include="packages\SharpDX.Diagnostics.2.0.4\lib\net20\SharpDX.Diagnostics.dll" />
+    <Content Include="packages\SharpDX.Diagnostics.2.0.4\lib\net20\SharpDX.Diagnostics.xml" />
+    <Content Include="packages\SharpDX.Direct2D1.3.0.2\lib\net45\SharpDX.Direct2D1.dll" />
+    <Content Include="packages\SharpDX.Direct2D1.3.0.2\lib\net45\SharpDX.Direct2D1.xml" />
+    <Content Include="packages\SharpDX.Direct2D1.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.Direct2D1.dll" />
+    <Content Include="packages\SharpDX.Direct2D1.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.Direct2D1.xml" />
+    <Content Include="packages\SharpDX.Direct3D11.3.0.2\lib\net45\SharpDX.Direct3D11.dll" />
+    <Content Include="packages\SharpDX.Direct3D11.3.0.2\lib\net45\SharpDX.Direct3D11.xml" />
+    <Content Include="packages\SharpDX.Direct3D11.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.Direct3D11.dll" />
+    <Content Include="packages\SharpDX.Direct3D11.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.Direct3D11.xml" />
+    <Content Include="packages\SharpDX.DXGI.3.0.2\lib\net45\SharpDX.DXGI.dll" />
+    <Content Include="packages\SharpDX.DXGI.3.0.2\lib\net45\SharpDX.DXGI.xml" />
+    <Content Include="packages\SharpDX.DXGI.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.DXGI.dll" />
+    <Content Include="packages\SharpDX.DXGI.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.DXGI.xml" />
+    <Content Include="packages\SharpDX.Mathematics.3.0.2\lib\net45\SharpDX.Mathematics.dll" />
+    <Content Include="packages\SharpDX.Mathematics.3.0.2\lib\net45\SharpDX.Mathematics.xml" />
+    <Content Include="packages\SharpDX.Mathematics.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.Mathematics.dll" />
+    <Content Include="packages\SharpDX.Mathematics.3.0.2\lib\portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1\SharpDX.Mathematics.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
